@@ -22,7 +22,7 @@ aluminum peripherial evaluation case.
   <xacro:property name="r430_cam_depth_to_fisheye_offset" value="0.042"/>
 
   <!-- The following values model the aluminum peripherial case for the
-    R430 camera, with the camera joint represented by the actual 
+    R430 camera, with the camera joint represented by the actual
     peripherial camera tripod mount -->
   <xacro:property name="r430_cam_width" value="0.105"/>
   <xacro:property name="r430_cam_height" value="0.039"/>
@@ -49,7 +49,7 @@ aluminum peripherial evaluation case.
           <box size="${r430_cam_width} ${r430_cam_height} ${r430_cam_depth}"/>
           <!--<mesh filename="package://realsense2_description/meshes/r430/r430.dae" />-->
         </geometry>
-        <material name="aluminum"/>
+        <xacro:material_aluminum/>
       </visual>
       <collision>
         <origin xyz="0.0 0.0 ${r430_cam_height/2}" rpy="0 0 0"/>
